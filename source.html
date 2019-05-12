@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Source Page</title>
+  <link rel="stylesheet" type="text/css" href="source.css">
+  <link rel="stylesheet" type="text/css" href="mobileForSource.css">
+  <link rel="stylesheet" href="sticky.css">
+  <link rel="icon" type="image/png" href="images/drum_png.png">
+
+  <!-- font-style for it  -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+
+    // header menu hiding
+    $(document).ready(function(){
+      $(".menu-button").click(function(){
+					$("div ul#main-menu").slideToggle();
+		  });
+
+      window.onscroll = function() {scrollFunction()};
+
+      $(window).on("scroll", function(){
+      //will run when the user scolls
+      //alert("Scrolling is working");
+      if( $(window).scrollTop() > 400 )
+      {
+        $("header-background").addClass("sticky");
+      }
+      else{
+        $("header-background").removeClass("sticky");
+      }
+      });
+    });
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 100) {
+        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("wrapper").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("wrapper").style.display = "none";
+      }
+    }
+
+// When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+  </script>
+
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+    <main>
+    <header>
+      <div class="header-background">
+        <h1>Drum World</h1>
+
+        <!-- icon and hiding -->
+        <nav>
+          <button class="menu-button"> <i class="fab fa-drupal"></i>To other pages</button>
+          <div>
+            <ul id="main-menu">
+              <li><a href="home.html">Home Page</a></li>
+              <li><a href="contact.html">Contact Page</a></li>
+              <li><a href="article.html">Article Page</a></li>
+            </ul>
+          </div>
+
+        </nav>
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php"><label for="search"></label><input type="text" placeholder="Search.." name="search" id="search"><button type="submit" name="button"> <i class="fas fa-search"></i></button>
+       </form>
+      </div>
+
+    </header>
+
+    <h2>Used Images in this Magazine</h2>
+
+    <table class="table" style="width:100%">
+      <tr>
+        <th>Images</th>
+        <th>Author</th>
+        <th>URL</th>
+      </tr>
+      <tr>
+        <td><img src="images/background.jpg" alt="background"></td>
+        <td>abednego ago</td>
+        <td>https://www.pexels.com/photo/broken-drumstick-close-up-dark-dirty-241687/</td>
+      </tr>
+      <tr>
+        <td><img src="images/drummer-drums-drumsticks-141376.jpg" alt="drummer playing drum"></td>
+        <td>Isaiah Colson</td>
+        <td>https://www.pexels.com/photo/person-playing-on-drums-during-daytime-141376/</td>
+      </tr>
+      <tr>
+        <td><img src="images/Article_Background.jpg" alt="drummer playing drum fastly"></td>
+        <td>Jadson Thomas</td>
+        <td>https://www.pexels.com/photo/artist-bass-close-up-drum-542553/</td>
+      </tr>
+      <tr>
+        <td><img src="images/adult-art-concert-167618.jpg" alt="drummer playing drum"></td>
+        <td>Thibault Trillet</td>
+        <td>https://www.pexels.com/photo/adult-art-concert-dark-167618</td>
+      </tr>
+      <tr>
+        <td><img src="images/source_background.jpg" alt="background of source page"></td>
+        <td>Pixabay</td>
+        <td>https://www.pexels.com/photo/drum-drums-musical-instrument-percussion-instrument-237464/</td>
+      </tr>
+      <tr>
+        <td>How TO - Scroll Back To Top Button</td>
+        <td>w3schools</td>
+        <td>https://www.w3schools.com/howto/howto_js_scroll_to_top.asp</td>
+      </tr>
+      <tr>
+        <td>CORPORATE EVENTS – HOW DRUMMING AFFECTS YOUR BRAIN</td>
+        <td>Drum Cafe Canada</td>
+        <td>http://drumcafe.ca/corporate-events-how-drumming-affects-your-brain/</td>
+      </tr>
+      <tr>
+        <td>A FEW INTERESTING FACTS ABOUT THE DRUMS</td>
+        <td>SOPM</td>
+        <td>http://www.sopm.gg/interesting-facts-drums/</td>
+      </tr>
+      <tr>
+        <td><img src="images/adult-artist-band-804552.jpg" alt="a amn playing drum inside mall"></td>
+        <td>Genaro Servin</td>
+        <td>https://www.pexels.com/photo/man-playing-drum-inside-mall-804552/</td>
+      </tr>
+      <tr>
+        <td>Drum</td>
+        <td>wikipedia</td>
+        <td>https://en.wikipedia.org/wiki/Drum</td>
+      </tr>
+    </table>
+
+  <footer>
+    <div class="footer">
+      <ul>
+        <li>Follow us on:</li>
+        <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/imjesseli/"> Instagram</a></li>
+        <li><i class="fab fa-twitter-square"></i><a href="https://twitter.com/jungheelee3314/"> Twitter</a></li>
+        <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/people/Zongxi-Li/100008806054385"> Facebook</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright 	&#169; Zongxi Li 2018</p>
+    </div>
+
+  </footer>
+  <aside id="wrapper">
+    <div class="wrapper">
+      <ul><li>To other pages:</li>
+        <li><a href="home.html">Home Page</a></li>
+        <li><a href="contact.html">Contact Page</a></li>
+        <li><a href="article.html">Article Page</a></li>
+      </ul>
+
+    </div>
+
+  </aside>
+  </main>
+  </body>
+</html>

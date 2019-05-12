@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="sticky.css">
+  <link rel="stylesheet" href="mobileForHome.css">
+  <link rel="icon" type="image/png" href="images/drum_png.png">
+
+  <!-- font-style for it  -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+    // header menu hiding
+    $(document).ready(function(){
+					// $("div ul#main-menu").slideToggle();
+
+          $(".menu-button").on("click", function(){
+
+            // TOGGLE MENU
+            $("div ul#main-menu").slideToggle();
+
+          });
+
+      window.onscroll = function() {scrollFunction()};
+
+      $(window).on("scroll", function(){
+      //will run when the user scolls
+      //alert("Scrolling is working");
+      if( $(window).scrollTop() > 400 )
+      {
+        $("aside").addClass("wrapper");
+      }
+      else{
+        $("aside").removeClass("wrapper");
+      }
+      });
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 100) {
+        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("wrapper").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("wrapper").style.display = "none";
+      }
+    }
+
+// When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  });
+
+  </script>
+
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+    <main>
+    <header>
+      <div class="header-background">
+        <h1>Drum World</h1>
+
+        <!-- icon and hiding -->
+        <nav>
+          <button class="menu-button"> <i class="fab fa-drupal"></i>To other pages</button>
+          <div>
+            <ul id="main-menu">
+              <li><a href="source.html">Source Page</a></li>
+              <li><a href="contact.html">Contact Page</a></li>
+              <li><a href="article.html">Article Page</a></li>
+            </ul>
+          </div>
+
+        </nav>
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php"><label for="input"></label><input type="text" placeholder="Search.." name="search" id="search"><button type="submit" name="button"> <i class="fas fa-search" class="visually-hidden"></i></button>
+       </form>
+      </div>
+
+    </header>
+    <div class="des">
+      <h2>Welcome to the Drum World!</h2>
+
+      <figure><img class="h2" src="images/drummer-drums-drumsticks-141376.jpg" alt="drummer playing drum"><figcaption>Photograph: <a href="https://www.pexels.com/photo/person-playing-on-drums-during-daytime-141376/" target="_blank">Isaiah Colson</a></figcaption></figure>
+
+      <p>This magazine is all about drums, including Electronic Drums and Acoustic Drums. In this magazine, you will know basic ideas about Drums. History about Drums, diiferent types of Drums, fun facts about drums;
+      </p>
+    </div>
+
+      <section>
+      <div class="article1">
+        <article>
+          <figure class="article1"><img class="article1" src="images/Article_Background.jpg" alt="drummer playing drum fastly"><figcaption>Photograph: <a href="https://www.pexels.com/photo/artist-bass-close-up-drum-542553/" target="_blank">Jadson Thomas</a></figcaption></figure>
+          <p>Also, why drums have been the oldest instruments in the World? Get know more about it now! <a href="article.html#article1">Read More</a></p>
+        </article>
+
+      </div>
+
+      <div class="article2">
+        <h3>Something about Drums</h3>
+
+        <p>Ah, the drums – one of the world’s oldest instruments and still one of the favourites today. They come in lots of different shapes and sizes and make a variety of sounds. And drums are getting popular in young generations. More than that, drums can be very classic and old-fashioned too. Many drummers have been playing drums since they were young and now they are still playing. Wanna know why do tehy have so much charm?  Here are some interesting drum facts that you must need to know... <a href="article.html#article1">Read More</a></p>
+
+      </div>
+
+      <p>The drum is a member of the percussion group of musical instruments. In the Hornbostel-Sachs classification system, it is a membranophone. Drums consist of at least one membrane, called a drumhead or drum skin, that is stretched over a shell and struck, either directly with the player's hands, or with a drum stick, to produce sound. There is usually a resonance head on the underside of the drum, typically tuned to a slightly lower pitch than the top drumhead. Drums are the world's oldest and most ubiquitous musical instruments, and the basic design has remained virtually unchanged for thousands of years. <a href="https://en.wikipedia.org/wiki/Drum">wikipedia</a></p>
+    </section>
+
+
+  <footer>
+    <div class="footer">
+      <ul>
+        <h4>Follow us on:</h4>
+        <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/imjesseli/"> Instagram</a></li>
+        <li><i class="fab fa-twitter-square"></i><a href="https://twitter.com/jungheelee3314/"> Twitter</a></li>
+        <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/people/Zongxi-Li/100008806054385"> Facebook</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright 	&#169; Zongxi Li 2018</p>
+    </div>
+
+  </footer>
+
+  </main>
+
+  <aside id="wrapper">
+    <div class="wrapper">
+      <ul>To other pages:
+        <li><a href="source.html">Source Page</a></li>
+        <li><a href="contact.html">Contact Page</a></li>
+        <li><a href="article.html">Article Page</a></li>
+      </ul>
+
+    </div>
+
+  </aside>
+  </body>
+
+
+</html>

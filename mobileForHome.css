@@ -1,0 +1,70 @@
+@media only screen and (max-width: 600px) {
+html{
+  width: 100%;
+}
+form{
+  padding-bottom: 1rem;
+}
+body{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+img{
+  width: 100%;
+  margin: 0;
+}
+header{
+  width: 100%;
+  text-align: center;
+  background-image: url("images/background.jpg");
+  color: white;
+}
+button#myBtn{
+  display: none;
+}
+ul#main-menu li{
+  color: white;
+  list-style-type: none;
+}
+ul#main-menu li a{
+  color: white;
+}
+ul#main-menu li a:visited{
+  color: white;
+}
+p{
+ font-size: 1.5rem;
+ font-family: 'Abel', sans-serif;
+}
+footer{
+	background-color:	#DCDCDC;
+	/*height: 200px;*/
+	bottom: 0;
+	font-family: 'Lobster', cursive;
+}
+footer.copyright{
+	background-color:	#DCDCDC;
+	height: 200px;
+	bottom: 0;
+	font-family: 'Lobster', cursive;
+}
+footer div.footer ul li{
+	list-style-type: none;
+  padding-top: 1rem;
+	margin-left: 3px;
+	padding-right: .5rem;
+	font-size: 1.2rem;
+}
+
+aside#wrapper{
+  display: none !important;
+  /*visibility: hidden;*/
+}
+.clearfix::after {
+  /*only use for floating */
+    content: "";
+    clear: both;
+    display: table;
+}
+}

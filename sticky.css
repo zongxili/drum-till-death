@@ -1,0 +1,92 @@
+/*These are the styles for the sticky header. The classes "sticky" should be
+dynamically added, using jQuery, to the sticky-wrapper div within the header as the
+user scrolls. */
+
+.sticky
+{
+	position: fixed;
+	background-image: none;
+	background-color: aliceblue;
+	height:auto;
+	padding:0;
+	color:black;
+	width:100%;
+	top:0;
+
+	box-shadow: 0 0 4px black;
+
+}
+/*
+.sticky .wrapper
+{
+	height:auto;
+	padding-top: 1rem
+}*/
+
+.sticky h1
+{
+	font-size: 1rem;
+	font-weight: bold;
+	margin:0;
+	text-decoration: underline;
+	float: left;
+	top: 0;
+}
+.sticky .subtitle
+{
+	display: none;
+}
+
+.sticky nav
+{
+	text-align: right;
+
+	/*margin-bottom:3rem;*/
+}
+
+.sticky nav button
+{
+	border-color: black;
+	color:black;
+	margin-bottom: 0;
+
+}
+
+.sticky nav button:hover
+{
+	background-color: black;
+	color:white;
+}
+
+.sticky nav button:active
+{
+	background-color: indianred;
+}
+
+.sticky nav ul
+{
+	margin:0;
+}
+
+.sticky nav li
+{
+	font-size: 1.2rem;
+	display: inline-block;
+	padding:0 2rem;
+}
+
+.sticky a
+{
+	color:black;
+
+}
+
+.sticky form
+{
+	display: none;
+}
+
+.sticky form button
+{
+	color:black;
+}
